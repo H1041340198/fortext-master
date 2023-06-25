@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorator="footer" >
+<head>
+    <meta charset="UTF-8">
+    <title>邮件模板</title>
+</head>
+<!--<p th:if="${content_start}" th:text="${content_start}"></p>-->
+[(${content_start})]
+<!--<div th:each="data_list : ${img_data_list}">-->
+    <!--<div th:each="img : ${data_list.imgs}">-->
+        <!--<a th:href="@{${full_img_url}}">查看源图片</a>-->
+        <!--<a th:href="@{${data_lis1t.full_img_url}}" th:style="'display:grid'"> <img th:title="点击查看原图" th:style="@{(${data_list.s_style})}" th:src="@{${img}} " alt="spark alert" /></a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<p th:text=" ${content_end}"></p>-->
+
+[(${content})]
+[(${content_end})]
+
+<!--报表开发者:<span th:text=" ${distribution_creator}"></span>-->
+<hr />
+<!--<div th:insert="~{footer :: copy}"></div>-->
+</body>
+</html>
